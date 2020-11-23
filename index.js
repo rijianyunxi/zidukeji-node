@@ -1,4 +1,4 @@
-function see() {
+(function see() {
     let token = localStorage.getItem('occ-token');
     let url = window.location.hash;
     let cid = /companyId=(.*?)&examId/.exec(url)[1];
@@ -51,4 +51,4 @@ function see() {
         console.log('执行完毕');
     }
     list();
-}
+})()
